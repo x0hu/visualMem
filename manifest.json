@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Human Benchmark Level Selector",
+  "name": "Visual Memory Level Selector",
   "version": "1.0.0",
-  "description": "Start the Visual Memory Test at a specific level",
+  "description": "Practice the Human Benchmark Visual Memory Test at any level with optional unlimited lives",
   "permissions": [
     "storage",
     "activeTab"
@@ -19,7 +19,7 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Set Starting Level"
+    "default_title": "Visual Memory Settings"
   },
   "icons": {
     "16": "icon16.png",
@@ -33,4 +33,3 @@
     }
   ]
 }
-
