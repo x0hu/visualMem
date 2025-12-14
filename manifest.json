@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Human Benchmark Level Selector",
+  "version": "1.0.0",
+  "description": "Start the Visual Memory Test at a specific level",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://humanbenchmark.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://humanbenchmark.com/tests/memory"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Set Starting Level"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js"],
+      "matches": ["https://humanbenchmark.com/*"]
+    }
+  ]
+}
+
